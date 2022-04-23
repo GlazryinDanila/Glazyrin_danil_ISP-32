@@ -1,0 +1,28 @@
+﻿<Window x:Class="nedvisimost.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nedvisimost"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/pngtree-black-gold-real-estate-party-background-material-gold-backgroundbuildingblack-gold-image_82041.jpg"/>
+        </Grid.Background>
+        <Border x:Name="authorizationBorder" BorderBrush="Black" BorderThickness="1" Margin="140,102,140,100" Background="Black"/>
+        <TextBox x:Name="loginTextBox" HorizontalAlignment="Left" Margin="204,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="30" Text="admin" FontSize="18"/>
+        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Margin="204,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="34"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="204,197,0,0" VerticalAlignment="Top" Width="176" Height="34" Password="admin" FontSize="18"/>
+        <CheckBox x:Name="showPassword" Content="Показать пароль&#xD;&#xA;" HorizontalAlignment="Left" Margin="204,238,0,0" VerticalAlignment="Top" Height="30" Width="176" Checked="showPassword_Checked" Foreground="#FF00FF61"/>
+        <Label x:Name="loginLabel" Content="login" HorizontalAlignment="Left" Margin="140,159,0,0" VerticalAlignment="Top" Height="33" Width="90" RenderTransformOrigin="0.5,0.153" FontFamily="Times New Roman" FontSize="20" Foreground="#FF4BF500"/>
+        <Label x:Name="passwordLabel" Content="password" HorizontalAlignment="Left" Margin="134,204,0,0" VerticalAlignment="Top" Height="34" Width="100" FontFamily="Times New Roman" FontSize="16" Foreground="#FF4CF900"/>
+        <Label x:Name="authorizationLabel" Content="Вход в систему" HorizontalAlignment="Left" Margin="144,102,0,0" VerticalAlignment="Top" Height="36" Width="280" FontFamily="Times New Roman" FontSize="20" Foreground="#FF4AF300"/>
+        <Label x:Name="captchaLabel" Content="капча" HorizontalAlignment="Left" Margin="400,158,0,0" VerticalAlignment="Top" Width="152" FontFamily="Times New Roman" FontSize="20"/>
+        <Button x:Name="refreshButton" Content="Ревреш" HorizontalAlignment="Left" Margin="385,159,0,0" VerticalAlignment="Top" Height="57" Width="245" Click="refreshButton_Click" Background="#FF1F0505" Foreground="#FF00FFA7" FontSize="20"/>
+        <TextBox x:Name="captchaGenTextBox" HorizontalAlignment="Left" Margin="385,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Height="30" FontSize="16"/>
+        <TextBox x:Name="captchaTextBox" HorizontalAlignment="Left" Margin="476,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Height="32" FontSize="18"/>
+        <Button x:Name="loginButton" Content="Войти" HorizontalAlignment="Center" Margin="0,268,0,0" VerticalAlignment="Top" Height="41" Width="480" Click="loginButton_Click" Background="{x:Null}" FontSize="24" Foreground="#FF4EFF00"/>
+
+    </Grid>
+</Window>
